@@ -1,0 +1,7 @@
+% Ex1 - cannot be typed
+fun(ide("f"),
+    app(app(ide(ide("pair")),
+            app(ide(ide("f")), ide(ide("3")))),
+        app(ide(ide("f")), ide(ide("true"))))
+).
+

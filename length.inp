@@ -1,0 +1,15 @@
+% length
+let(
+    rec(
+        def(ide("length"),
+            fun(ide("l"),
+                cond(
+                    app(ide(ide("null")), ide(ide("l"))),
+                    ide(ide("0")),
+                    app(ide(ide("succ")),
+                        app(ide(ide("length")),
+                            app(ide(ide("tl")),
+                                ide(ide("l"))))))))
+    ),
+    ide(ide("length"))
+).
